@@ -3,8 +3,6 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const nayoks = ["john", "kom", "mon", "thom", "tom"];
-
   return (
     <div className="App">
       <Counter></Counter>
@@ -14,16 +12,13 @@ function App() {
 function Counter(props) {
   const [count, setCount] = useState(0);
   const setIncrease = () => {
-    const newCount = count + 1;
-    setCount(newCount);
+    setCount(count + 1);
   };
   const setDecrease = () => {
-    const newCount = count - 1;
-    setCount(newCount);
+    setCount(count - 1);
   };
   const setReset = () => {
-    const newCount = 0;
-    setCount(newCount);
+    setCount(0);
   };
   return (
     <div className="counter-div">
